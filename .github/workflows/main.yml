@@ -36,7 +36,7 @@ jobs:
       - name: Flet Build APK
         run: |
           # 关键：直接使用 flet cli 构建
-          flet build apk
+          flet build apk --yes
       - name: Upload APK
         uses: actions/upload-artifact@v4  # 已升级到最新的 v4
         with:
